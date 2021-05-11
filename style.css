@@ -24,6 +24,29 @@
       background: linear-gradient(transparent, #00c6ff)
 }
 
+.scroll-top{
+      height: 40px;
+      width: 40px;
+      display: grid;
+      place-items: center;
+      font-size: 1.4rem;
+      position: fixed;
+      right: 2%;
+      bottom: 4%;
+      z-index: 1050;
+      cursor: pointer;
+      background: #444;
+      color: #fff;
+      opacity: 0;
+      transition:all 1s ease;
+      transform: translateY(-100px);
+}
+
+.scroll-top.show{
+      opacity: 1;
+      transform: translateY(0);
+}
+
 /*--------------- hero section --------------- */
 
 .header {
@@ -97,9 +120,9 @@
 .wrapper .scrollBut p {
       user-select: none;
       margin-top: -2.8em;
-      margin-left: 29.5em;
+      margin-left: 35.7em;
       color: rgba(168, 168, 168, 0.712);
-      font-size: 12px;
+      font-size: 20px;
 }
 
 .wrapper .sci {
@@ -540,63 +563,8 @@ button {
 /*--------------- contact section starts here --------------- */
 
 .contact {
-      margin-bottom: 20em;
+      margin-bottom: 10em;
 }
-/* #contact-form {
-      margin: 5% 0;
-}
-
-.contact .icon-title {
-      margin-top: 10px;
-      color: #fff;
-}
-
-#contact-form ul {
-      list-style: none;
-      margin-bottom: 40px;
-      border-radius: 0;
-}
-
-#contact-form li:last-of-type {
-      border-bottom: none;
-}
-
-#contact-form label {
-      display: block;
-      font-size: 22px;
-      color: rgb(97, 97, 97);
-}
-
-#contact-form input, #contact-form textarea {
-      width: 100%;
-      padding: 5px;
-      border: none;
-      resize: vertical;
-      background: transparent;
-      color: #fff;
-      font-weight: bolder;
-}
-
-input:focus {
-      outline: none !important;
-      border: none !important;
-}
-
-textarea:focus {
-      outline: none !important;
-      border: none !important;
-}
-
-.textarea {
-      border-bottom: 1px solid #c9c9c9;
-}
-
-@media(max-width: 900px) {
-      #contact-form {
-            margin: 5% 0;
-            width: 98%;
-      }
-} */
 
 .contact{
       position: relative;
@@ -722,7 +690,7 @@ footer{
       height: auto;
       width: 100vw;
       font-family: "Open Sans";
-      padding-top: 40px;
+      padding-top: 20px;
       color: #fff;
 }
 

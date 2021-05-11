@@ -58,3 +58,15 @@ $('html, body').animate({
 }
 }
 });
+
+const scrolljs = document.querySelector(".scroll-top");
+window.onscroll =()=>{
+    this.scrollY > 1020?scrolljs.classList.add("show") : scrolljs.classList.remove("show");
+};
+scrolljs.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    })
+});
