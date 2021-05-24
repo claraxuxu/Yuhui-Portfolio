@@ -66,7 +66,7 @@ body, html {
       position: fixed;
       right: 2%;
       bottom: 4%;
-      z-index: 1050;
+      z-index: 4;
       cursor: pointer;
       border-radius: 20;
       color: #fff;
@@ -429,20 +429,34 @@ section {
 
 .section-subheading {
       color: #fff;
-      margin: 10px 0;
       margin-left: -15em;
+      margin-top: -2.5em;
+}
+
+.row {
+      margin-bottom: 15px;
 }
 
 .section-info {
       font-size: 24px;
       color: #fff;
       margin-left: -10em;
+      letter-spacing: 1px;
+      max-width: 40em !important;
 }
 
+.info-con:link{
+      color: #007FFF;
+}
+
+.info-con:hover {
+      text-decoration: none;
+      color: #ef4521 ;
+      transition: 0.5s ;
+}
 .myPhoto {
-      float: right;
-      max-width: 200px;
-      margin-top: -29em;
+      margin-left: 80%;
+      margin-top: -23em;
 }
 
 .myPhoto img {
@@ -465,7 +479,7 @@ button {
 /*--------------- skill section starts  --------------- */
 
 .skill {
-      background: #111;
+      background: #05192D;
 }
 
 .service {
@@ -502,6 +516,12 @@ button {
 
 .project {
       margin-top: -20px;
+      /* background-color: #0c3f73; */
+      background-image: url("assets/pro_bg1.png");
+      background-repeat: no-repeat;
+      background-position: left top;
+      background-attachment: fixed;
+      background-size: 100% 100vh;
 }
 
 .cards {
@@ -596,7 +616,13 @@ button {
       font-size: 18px !important;
       font-weight: bold;
 }
-
+.more:hover {
+      margin-left: 22%;
+      margin-top: 40%;
+      background-color: #b8946d;
+      font-size: 18px !important;
+      font-weight: bold;
+}
 /*--------------- contact section starts here --------------- */
 
 .contactme{
